@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --paragraph-font-size: .9375rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--very-dark-blue);
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  max-width: 350px;
+  background: radial-gradient(ellipse at top, hsl(215, 18%, 20%), hsl(216, 24%, 12%));
+  padding: 2.5em;
+  border-radius: 30px;
+  color: white;
+}
+.container .feedback-container .star-circle {
+  margin-bottom: 1em;
+}
+.container .feedback-container .circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  width: 50px;
+  height: 50px;
+  color: var(--medium-grey);
+  font-weight: 700;
+  transition: 0.1s ease-in-out;
+}
+.container .feedback-container .description {
+  font-size: var(--paragraph-font-size);
+  font-weight: 700;
+  color: var(--medium-grey);
+  line-height: 1.5rem;
+}
+.container .feedback-container .feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2em 0;
+  cursor: pointer;
+}
+.container .feedback-container .feedback .selected {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+.container .feedback-container .feedback .circle:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.container .feedback-container .submit-button {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 2em;
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: 0.2s ease-in-out;
+}
+.container .feedback-container .submit-button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+.container .thank-you-container {
+  display: none;
+  text-align: center;
+}
+.container .thank-you-container svg {
+  display: block;
+  margin: 0 auto;
+}
+.container .thank-you-container .your-rating {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: hsla(216, 12%, 54%, 0.1);
+  margin: 2em auto 1.5em;
+  padding: 0.5em 1.5em;
+  color: rgba(252, 118, 20, 0.9);
+  font-weight: 500;
+}
+.container .thank-you-container h1 {
+  margin-bottom: 0;
+}
+.container .thank-you-container p {
+  font-size: var(--paragraph-font-size);
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: var(--medium-grey);
+}/*# sourceMappingURL=styles.css.map */
